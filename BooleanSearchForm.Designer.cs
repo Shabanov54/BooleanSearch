@@ -42,6 +42,7 @@ namespace BooleanSearch
             this.label3 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // textBox1
@@ -125,7 +126,7 @@ namespace BooleanSearch
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(16, 181);
+            this.button1.Location = new System.Drawing.Point(13, 197);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(106, 23);
             this.button1.TabIndex = 5;
@@ -160,11 +161,22 @@ namespace BooleanSearch
             this.checkBox3.Text = "Открыт к предложениям";
             this.checkBox3.UseVisualStyleBackColor = true;
             // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(126, 202);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(135, 17);
+            this.checkBox4.TabIndex = 8;
+            this.checkBox4.Text = "Открыть в браузере?";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
             // BooleanSearchForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.checkBox4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.button1);
@@ -199,6 +211,7 @@ namespace BooleanSearch
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox4;
     }
 }
 

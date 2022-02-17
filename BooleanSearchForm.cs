@@ -110,15 +110,17 @@ namespace BooleanSearch
                 textBox4.Text = $"{selectItemCombobox} {deletedValue} {etraVAl} {stringPosition} {citystring} {telegram} {mail} {open}";
                 break;
             }
-
-            OpenBrowser();
+            if (checkBox4.Checked == true)
+            {
+                OpenBrowser();
+            }
         }
         private async void OpenBrowser()
         {
             Process.Start("chrome.exe");
-            await Task.Delay(700);
+            await Task.Delay(1000);
             SendKeys.SendWait(textBox4.Text);
-            await Task.Delay(700);
+            await Task.Delay(1000);
             
             SendKeys.Send("{ENTER}");
         }
