@@ -1,0 +1,12 @@
+Хабр карьера
+site:moikrug.ru "Новосибирск "  удаленно  AND  pyton -inurl:dir -vacancies  -companies  -resumes? -friends -courses
+Для поиска телеграмма по хабру
+site:moikrug.ru OR site:career.habr.com -inurl:dir -vacancies -companies -courses -resumes? python "москва" «Telegram: @»
+
+Открыт к предложениям
+site:linkedin.com/in OR site:linkedin.com/pub -inurl:dir intitle:"python developer" москва «открыт к предложениям»
+
+Последний визит
+site:career.habr.com python developer москва «последний визит»
+
+(  (   "Python"  OR    "Python разработчик"  )  )       site:linkedin.com/in/ OR site:linkedin.com/pub/ -site:linkedin.com/pub/dir/
