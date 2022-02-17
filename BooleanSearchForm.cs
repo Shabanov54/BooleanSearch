@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -107,12 +108,20 @@ namespace BooleanSearch
                     open = "\"открыт к предложениям\"";
                 }
                 textBox4.Text = $"{selectItemCombobox} {deletedValue} {etraVAl} {stringPosition} {citystring} {telegram} {mail} {open}";
-
                 break;
             }
 
+            OpenBrowser();
         }
-
+        private async void OpenBrowser()
+        {
+            Process.Start("chrome.exe");
+            await Task.Delay(700);
+            SendKeys.SendWait(textBox4.Text);
+            await Task.Delay(700);
+            
+            SendKeys.Send("{ENTER}");
+        }
         private void textBox4_MouseClick_1(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
