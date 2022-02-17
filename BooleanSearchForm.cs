@@ -106,7 +106,6 @@ namespace BooleanSearch
                 {
                     open = "\"открыт к предложениям\"";
                 }
-
                 textBox4.Text = $"{selectItemCombobox} {deletedValue} {etraVAl} {stringPosition} {citystring} {telegram} {mail} {open}";
 
                 break;
